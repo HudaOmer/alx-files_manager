@@ -6,6 +6,7 @@ import Queue from 'bull';
 import dbClient from '../utils/db';
 import redisClient from '../utils/redis';
 // 5. First file
+// 6. Get and list file
 
 const fileQueue = new Queue('fileQueue', 'redis://127.0.0.1:6379');
 
