@@ -9,6 +9,7 @@ import FilesController from '../controllers/FilesController';
 // 5. First file: files
 // 6. Get and list file: files/:id files
 // 7. File publish/unpublish: files
+// 8. File data: files/:id/data
 
 const router = Router();
 
@@ -28,5 +29,7 @@ router.get('/files', FilesController.getIndex);
 
 router.put('/files/:id/publish', FilesController.putPublish);
 router.put('/files/:id/unpublish', FilesController.putUnpublish);
+
+router.get('/files/:id/data', FilesController.getFile);
 
 module.exports = router;
