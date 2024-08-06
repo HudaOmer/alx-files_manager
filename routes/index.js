@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import AppController from '../controllers/AppController';
-// 2. First API: status, stats
+// 2. First API one two
 
 const router = Router();
 
