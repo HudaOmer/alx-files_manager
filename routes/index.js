@@ -1,10 +1,10 @@
 import { Router } from 'express';
 import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
+import AuthController from '../controllers/AuthController';
 // 2. First API: status stats
 // 3. Create a new user: users
-// 4. Authenticate a user: connect disconnect
-// user/me
+// 4. Authenticate a user: connect disconnect user/me
 
 const router = Router();
 
