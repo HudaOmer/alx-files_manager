@@ -85,6 +85,7 @@ class FilesController {
         try {
           await fs.mkdir(filePath);
         } catch (error) {
+          // catch
         }
         await fs.writeFile(fileName, buff, 'utf-8');
       } catch (error) {
