@@ -5,6 +5,7 @@ import dbClient from '../utils/db';
 import redisClient from '../utils/redis';
 // 3. Create a new user
 // 4. Authenticate a user
+// 11. New user - welcome email
 
 const userQueue = new Queue('userQueue', 'redis://127.0.0.1:6379');
 

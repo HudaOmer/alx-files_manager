@@ -4,6 +4,7 @@ import { promises as fs } from 'fs';
 import { ObjectID } from 'mongodb';
 import dbClient from './utils/db';
 // 9. Image Thumbnails
+// 11. New user - welcome email
 
 const fileQueue = new Queue('fileQueue', 'redis://127.0.0.1:6379');
 const userQueue = new Queue('userQueue', 'redis://127.0.0.1:6379');
