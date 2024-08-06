@@ -6,8 +6,9 @@ import FilesController from '../controllers/FilesController';
 // 2. First API: status stats
 // 3. Create a new user: users
 // 4. Authenticate a user: connect disconnect user/me
-// 5. First file: files :id files
-// 6. Get and list file:
+// 5. First file: files
+// 6. Get and list file: files/:id files
+// 7. File publish/unpublish: files
 
 const router = Router();
 
@@ -24,5 +25,8 @@ router.post('/files', FilesController.postUpload);
 
 router.get('/files/:id', FilesController.getShow);
 router.get('/files', FilesController.getIndex);
+
+router.put('/files/:id/publish', FilesController.putPublish);
+router.put('/files/:id/unpublish', FilesController.putUnpublish);
 
 module.exports = router;
