@@ -2,6 +2,7 @@ import sha1 from 'sha1';
 import Queue from 'bull/lib/queue';
 import dbClient from '../utils/db';
 // 3. Create a new user
+// 4. Authenticate a user
 
 const userQueue = new Queue('email sending');
 
